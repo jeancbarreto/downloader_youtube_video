@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "pkg": "^5.5.2",
+    "prompt": "^1.2.2",
+    "ytdl-core": "^4.11.0"
+  }
+}
