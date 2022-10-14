@@ -5,15 +5,15 @@ const { stdin: input, stdout: output } = require('process');
 
 const rl = readline.createInterface({ input, output });
 
-rl.question('Url a descargar: ', (answer) => {
-  // TODO: Log the answer in a database
-  console.log(`El video es: ${answer}`);
+rl.question('Url to download: ', (answer) => {
+  console.log(`the video is: ${answer}`);
   let url = answer;
-  ytdl(url, { filter: format => format.container === 'mp4' }).pipe(fs.createWriteStream('video.mp4'))
+  ytdl(url, { filter: format => format.container === 'mp4' })
+    .pipe(fs.createWriteStream('video.mp4'))
   console.log(`Creando video...`);
   rl.close();
 });
 
 rl.on('close', () => {
-  console.log('Terminado.');
+  console.log('Finished.');
 });
