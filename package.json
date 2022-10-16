@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "lodash": "^4.17.21",
     "pkg": "^5.5.2",
     "prompt": "^1.2.2",
     "ytdl-core": "^4.11.2"
